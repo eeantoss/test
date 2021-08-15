@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://gitee.com/xiaoai6/scripts.git ~/Scripts
+          git clone https://gitee.com/xiaoai6/scripts.git ~/scripts
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -31,7 +31,7 @@ jobs:
       - name: '运行 【快手视频】'
         if: env.KUAISHOUMV
         run: |
-          cd ~/Scripts
+          cd ~/scripts
           node Task/Auto_Kuaishou.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
