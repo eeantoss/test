@@ -26,7 +26,7 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
-          cd ~/Scripts
+          cd ~/scripts
           npm install
       - name: '运行 【快手视频】'
         if: env.KUAISHOUMV
